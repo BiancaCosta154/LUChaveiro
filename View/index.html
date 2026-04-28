@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luchaveiro — Chaveiro 24h em Belo Horizonte</title>
+  <link rel="icon" type="Images/icon" href="/View/Images/iconS.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+   
+    :root {
+    --primary:      #F5A800; 
+    --primary-dark: #E07800; 
+    --dark:         #111111; 
+    --dark-soft:    #444444; 
+    --bg:           #F4F3EE; 
+    --bg-gold:      #FFF3D6; 
+    --whatsapp:     #25D366;
+}
+
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg),
+      
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+
+    
+    .hero {
+      background: #19191a;
+      color: #fff;
+      padding: 5rem 10rem;
+      text-align: center;
+  
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #FFD700;
+      color: #1a1a2e;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 1.75rem;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #FFD700;
+      color: #1a1a2e;
+      border: none;
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-primary:hover { background: #f0c800; }
+
+    .btn-whats {
+      background: transparent;
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      animation-name: myAnimation;
+      animation-duration:5s;
+      animation-iteration-count: infinite;
+
+    }
+
+    @keyframes myAnimation {
+      from {background-color: transparent;}
+      to {background-color: var(--whatsapp);}
+    }
+
+    .btn-secondary:hover { background: rgba(255,255,255,0.08); }
+
+    
+    .trust-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .trust-pill {
+      background: #fff;
+      border: 0.5px solid #ddd;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+   
+    .section { margin-bottom: 2rem; }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: #1a1a2e;
+    }
+
+   
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 0.5px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+
+    .service-card img {
+      height: 120px;
+      width: 140px;
+      border-radius: 10px;
+    }
+
+    .service-card h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .about-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      border: 0.5px solid #ddd;
+    }
+
+    .about-accent {
+      width: 4px;
+      min-width: 4px;
+      background: #FFD700;
+      border-radius: 2px;
+      align-self: stretch;
+    }
+
+    .about-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    
+    footer {
+      border-top: 0.5px solid #ddd;
+      padding-top: 1.25rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.9;
+    }
+
+    footer .cnpj {
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+
+    div .imgIcon{
+
+      height: 50px;
+      border-radius: 14px;
+      
+    }
+
+    
+
+  </style>
+</head>
+<body>
+
+
+
+  <div class="hero">
+    <img  class="imgIcon"  src="Images/iconS.png"  alt="Luchaveiro logo - chaveiro 24 horas em Belo Horizonte">
+    <br>
+    <div class="hero-badge">⚡ Atendimento 24 horas</div>
+    <h1>Precisa de um chaveiro em Belo Horizonte e região?</h1>
+    <p>Chegamos em até 10 minutos. Equipe especializada, preço justo e atendimento de confiança.</p>
+    <div class="btn-group">
+      <a href="tel:+553100000000" class="btn-primary">☎ Ligue Agora</a>
+      <a href="https://api.whatsapp.com/send?phone=5531991133365&text=Olá,%20gostaria%20de%20solicitar%20um%20Orçamento!" target="_blank" class="btn-whats">💬 Chamar no WhatsApp</a>
+    </div>
+  </div>
+
+<div class="container">
+
+
+  <div class="section">
+    <p class="section-title">Quem somos</p>
+    <div class="about-card">
+      <div class="about-accent"></div>
+      <p>Cientes da dificuldade em encontrar um chaveiro de confiança, a Luchaveiro nasceu para oferecer praticidade, conforto e comodidade com uma equipe especializada. Unimos baixo custo à alta capacitação para garantir seu atendimento com segurança e agilidade.</p>
+    </div>
+  </div>
+
+
+
+  <div class="trust-bar">
+    <div class="trust-pill">✓ Chegamos em 10 min</div>
+    <div class="trust-pill">✓ Atendimento 24h</div>
+    <div class="trust-pill">✓ Equipe certificada</div>
+    <div class="trust-pill">✓ Preço justo</div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Nossos serviços</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="Images/residencial.jpg">
+        <h3>Abertura residencial</h3>
+      </div>
+
+
+      <div class="service-card">
+        <img src="Images/abtaauto.png">
+        <h3>Abertura de veículos</h3>
+      </div>
+
+
+      <div class="service-card">
+        <img src="Images/chavecod.png">
+        <h3>Chaves codificadoras</h3>
+      </div>
+      <div class="service-card">
+       <img src="Images/afiacao.png">
+        <h3>Afiação de equipamentos</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="ourcostumers"></div>
+   <h3>Avaliações:</h3>
+   <div class="carrossel">
+   <img src="Images/cliente1.png">
+   <img src="Images/cliente2.png">
+   <img src="Images/cliente2.png">
+
+   </div>
+  
+
+  <footer>
+    <p>Rua tal tal — Belo Horizonte, MG</p>
+    <p>© LU Chaveiro 2024 · Todos os direitos reservados</p>
+    <p class="cnpj">CNPJ 38.171.315/0001-74</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
+
